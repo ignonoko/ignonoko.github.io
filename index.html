@@ -16,38 +16,34 @@
       .input-uuid {
         margin: 1% 0 1% 0 !important;
       }
-      .box {
-        justify-content: center;
-        align-items: center;
-      }
 
       .button {
         margin: 1% 0 1% 3%;
-      }
-
-      .multiline {
-        white-space: pre-wrap;
       }
     </style>
     <title>UUid Changer</title>
   </head>
 
-  <body class="h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+  <body class="bg-gradient-to-r from-violet-500 to-fuchsia-500">
     <div class="main flex flex-col w-full justify-center items-center">
       <h1
         class="text-white font-semibold text-[2.6rem] mb-4 mt-2 ml-[2rem] text-center"
       >
         UUID CHANGER
       </h1>
-      <div class="box flex flex-col md:flex-row w-full m-auto box-uuid">
+      <div
+        class="box flex justify-center flex-col items-center md:flex-row m-auto box-uuid md:mb-5"
+      >
         <label class="text-white font-semibold mr-2" for="uuid">UUID:</label>
         <input
-          class="input-uuid rounded md:w-[23rem] md:min-w-[15rem]:"
+          class="input-uuid rounded md:w-[23rem] md:min-w-[15rem]"
           name="uuid"
           id="uuid"
         />
       </div>
-      <div class="box flex flex-col md:flex-row w-full m-auto">
+      <div
+        class="box flex justify-center flex-col items-center md:flex-row m-auto"
+      >
         <label class="text-white font-semibold mr-2" for="links">LINKS:</label>
         <textarea
           class="rounded md:w-[23rem] md:min-w-[15rem]"
@@ -59,19 +55,19 @@
       </div>
 
       <button
-        class="transition-all w-[6rem] button bg-white rounded-full font-semibold Copy py-2 hover:scale-110 hover:-translate-y-1"
+        class="Copy transition-all w-[6rem] button bg-white rounded-full font-semibold py-2 hover:scale-110 hover:-translate-y-1"
       >
         Go!
       </button>
-      <div class="box flex flex-col md:flex-row w-full m-auto">
+      <div
+        class="box flex justify-center flex-col items-center md:flex-row m-auto"
+      >
         <label class="text-white font-semibold mr-2" for="output"
           >OUTPUT:</label
         >
         <textarea
           name="output"
           class="multiline rounded md:w-[25rem] md:min-w-[18rem]"
-          cols="12"
-          rows="11"
         ></textarea>
       </div>
 
