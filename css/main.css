@@ -652,4 +652,8 @@ video {
   .md\:min-w-\[18rem\] {
     min-width: 18rem;
   }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
 }
