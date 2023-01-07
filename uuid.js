@@ -1,8 +1,5 @@
 "use strict";
 import { Base64 } from "https://cdn.jsdelivr.net/npm/js-base64@3.7.3/base64.mjs";
-import Alpine from "alpinejs";
-window.Alpine = Alpine;
-Alpine.start();
 let uuid = "";
 let links = [];
 let output = [];
