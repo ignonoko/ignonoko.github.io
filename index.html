@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script async src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/js-base64@3.7.3/base64.min.js"
+    ></script>
+    <script defer type="module" defer src="./uuid.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .input-uuid {
+        margin: 1% 0 1% 0 !important;
+        width: 23rem;
+        min-width: 15rem;
+      }
+
+      #links {
+        width: 23rem;
+        min-width: 15rem;
+      }
+
+      .box {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button {
+        margin: 1% 0 1% 3%;
+        width: 6rem;
+      }
+
+      .multiline {
+        width: 400px;
+        white-space: pre-wrap;
+        width: 24rem;
+        min-width: 15rem;
+      }
+    </style>
+    <title>UUid Changer</title>
+  </head>
+
+  <body class="h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+    <div class="main flex flex-col w-full justify-center items-center">
+      <h1
+        class="text-white font-semibold text-[2.6rem] mb-4 mt-2 ml-[2rem] text-center"
+      >
+        V2ray uuid changer
+      </h1>
+      <div class="box flex w-full m-auto box-uuid">
+        <label class="text-white font-semibold mr-2" for="uuid">UUID:</label>
+        <input class="input-uuid rounded" name="uuid" id="uuid" />
+      </div>
+      <div class="box flex w-full m-auto">
+        <label class="text-white font-semibold mr-2" for="links">LINKS:</label>
+        <textarea
+          class="rounded"
+          name="links"
+          id="links"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+
+      <button
+        class="transition-all button bg-white rounded-full font-semibold Copy py-2 hover:scale-110 hover:-translate-y-1"
+      >
+        Go!
+      </button>
+      <div class="box flex w-full m-auto">
+        <label class="text-white font-semibold mr-2" for="output"
+          >OUTPUT:</label
+        >
+        <textarea
+          name="output"
+          class="multiline rounded"
+          cols="12"
+          rows="11"
+        ></textarea>
+      </div>
+
+      <button
+        class="transition-all button bg-white rounded-full font-semibold Copy py-2 px-4 hover:scale-110 hover:-translate-y-1"
+      >
+        Copy!
+      </button>
+    </div>
+  </body>
+</html>
