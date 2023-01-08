@@ -17,17 +17,17 @@
   </head>
 
   <body class="h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
-    <div class="main flex flex-col w-full justify-center items-center">
+    <div class="flex flex-col items-center justify-center w-full main">
       <h1
-        class="text-white font-mono md:tracking-wider font-semibold text-3xl md:text-[3.5rem] my-4 md:my-10 md:ml-[2rem] text-center"
+        class="text-white font-semibold text-[2.6rem] mb-4 mt-2 ml-[2rem] text-center"
       >
         UUID CHANGER
       </h1>
       <div
-        class="box flex justify-center flex-col items-center md:flex-row m-auto box-uuid md:mb-5"
+        class="flex flex-col items-center justify-center m-auto box md:flex-row box-uuid md:mb-5"
       >
         <label
-          class="text-white font-mono font-semibold md:min-h[2rem] mr-2 mb-3 md:mb-0"
+          class="text-white font-semibold md:min-h[2rem] mr-2 mb-3 md:mb-0"
           for="uuid"
           >UUID:</label
         >
@@ -38,11 +38,9 @@
         />
       </div>
       <div
-        class="box flex justify-center flex-col items-center md:flex-row m-auto"
+        class="flex flex-col items-center justify-center m-auto box md:flex-row"
       >
-        <label
-          class="text-white font-mono font-semibold mr-2 my-3 md:my-0"
-          for="links"
+        <label class="my-3 mr-2 font-semibold text-white md:my-0" for="links"
           >LINKS:</label
         >
         <textarea
@@ -55,28 +53,26 @@
       </div>
 
       <button
-        class="Copy transition-all font-mono my-5 md:my-10 md:ml-10 w-28 md:w-36 button bg-white rounded-full font-semibold py-2 hover:scale-110 hover:-translate-y-1"
+        class="py-2 my-5 font-semibold transition-all bg-white rounded-full Copy md:ml-10 w-28 md:w-36 button hover:scale-110 hover:-translate-y-1"
       >
         Go!
       </button>
       <div
-        class="box flex justify-center flex-col items-center md:flex-row m-auto box-uuid md:mb-5"
+        class="flex flex-col items-center justify-center m-auto box md:flex-row box-uuid md:mb-5"
       >
-        <label
-          class="text-white font-mono font-semibold mr-2 mb-3 md:mb-0"
-          for="output"
+        <label class="mb-3 mr-2 font-semibold text-white md:mb-0" for="output"
           >OUTPUT:</label
         >
         <textarea
           name="output"
           cols="50"
           rows="10"
-          class="multiline rounded"
+          class="rounded multiline"
         ></textarea>
       </div>
 
       <button
-        class="transition-all font-mono my-5 md:my-10 md:ml-10 button w-28 md:w-36 bg-white rounded-full font-semibold Copy py-2 px-4 hover:scale-110 hover:-translate-y-1"
+        class="px-4 py-2 my-5 font-semibold transition-all bg-white rounded-full md:my-10 md:ml-10 button w-28 md:w-36 Copy hover:scale-110 hover:-translate-y-1"
       >
         Copy!
       </button>
