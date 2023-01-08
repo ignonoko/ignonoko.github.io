@@ -27,12 +27,12 @@
         class="box flex justify-center flex-col items-center md:flex-row m-auto box-uuid md:mb-5"
       >
         <label
-          class="text-white font-semibold md:min-h[2rem] mr-2 mb-3 md:mb-0"
+          class="text-white font-mono font-semibold md:min-h[2rem] mr-2 mb-3 md:mb-0"
           for="uuid"
           >UUID:</label
         >
         <input
-          class="input-uuid rounded md:w-[23rem] md:min-w-[15rem]"
+          class="input-uuid my-5 md:my-10 rounded md:w-[23rem] md:min-w-[15rem]"
           name="uuid"
           id="uuid"
         />
@@ -40,39 +40,41 @@
       <div
         class="box flex justify-center flex-col items-center md:flex-row m-auto"
       >
-        <label class="text-white font-semibold mr-2 my-3 md:my-0" for="links"
+        <label
+          class="text-white font-mono font-semibold mr-2 my-3 md:my-0"
+          for="links"
           >LINKS:</label
         >
         <textarea
-          class="rounded md:w-[23rem] md:min-w-[15rem]"
+          class="rounded md:w-[23rem] md:min-w-[12rem]"
           name="links"
           id="links"
-          cols="30"
+          cols="50"
           rows="10"
         ></textarea>
       </div>
 
       <button
-        class="Copy transition-all my-5 md:ml-10 w-28 md:w-36 button bg-white rounded-full font-semibold py-2 hover:scale-110 hover:-translate-y-1"
+        class="Copy transition-all font-mono my-5 md:my-10 md:ml-10 w-28 md:w-36 button bg-white rounded-full font-semibold py-2 hover:scale-110 hover:-translate-y-1"
       >
         Go!
       </button>
-      <div
-        class="box flex justify-center flex-col items-center md:flex-row m-auto"
-      >
-        <label class="text-white font-semibold mr-2 mb-3 md:mb-0" for="output"
+      <div class="box flex justify-center flex-col md:flex-row self-center">
+        <label
+          class="text-white self-center font-mono font-semibold mr-2 mb-3 md:mb-0"
+          for="output"
           >OUTPUT:</label
         >
         <textarea
           name="output"
-          cols="30"
+          cols="50"
           rows="10"
-          class="multiline rounded md:w-[25rem] md:min-w-[18rem]"
+          class="multiline rounded"
         ></textarea>
       </div>
 
       <button
-        class="transition-all my-5 md:ml-10 button w-28 md:w-36 bg-white rounded-full font-semibold Copy py-2 px-4 hover:scale-110 hover:-translate-y-1"
+        class="transition-all font-mono my-5 md:my-10 md:ml-10 button w-28 md:w-36 bg-white rounded-full font-semibold Copy py-2 px-4 hover:scale-110 hover:-translate-y-1"
       >
         Copy!
       </button>
